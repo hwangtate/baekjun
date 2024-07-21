@@ -1,10 +1,10 @@
-count = 0
-list = []
+# 입력 받기
+numbers = [int(input()) for _ in range(9)]
 
-while count != 9:
-    result = int(input())
-    list.append(result)
-    count += 1
+# 최댓값과 최댓값의 위치 찾기
+max_value = max(numbers)
+max_index = numbers.index(max_value) + 1  # index는 0부터 시작하므로 +1
 
-print(max(list))
-print(list.index(max(list)) + 1)
+# 결과 출력
+print(max_value)
+print(max_index)
