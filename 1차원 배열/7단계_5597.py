@@ -9,4 +9,3 @@ for i in success_students:
 
 print(min(no_students))
 print(max(no_students))
-
